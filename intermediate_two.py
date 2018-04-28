@@ -4,11 +4,7 @@ usernames = ['jimbo', 'giltson98', 'derekf', 'WhatSup', 'NicolEye', 'swei45',
 
 user_name = input("Enter your username\n\n>>>")
 check = False
-for name in usernames:
-    if name == user_name:
-        check = True
-
-if check == True:
+if user_name in usernames:
     print("Access granted")
 else:
     print("Access denied")
